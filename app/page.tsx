@@ -48,30 +48,39 @@ export default function Home() {
     }
   ]
 
+  const trainerInfo = {
+    name: "מיכל טננבאום",
+    title: "מומחית בכושר לנשים בהריון",
+    experience: "8+ שנות ניסיון",
+    certifications: ["מוסמכת בכושר לנשים בהריון", "מדריכת פילאטיס", "מומחית בתזונה בהריון"],
+    description: "אני מאמינה שכל אישה בהריון ראויה להרגיש חזקה, בריאה ומלאה אנרגיה. עם ניסיון של 8+ שנים בתחום הכושר לנשים בהריון, אני משלבת מומחיות מקצועית עם אהבה ותמיכה כדי לעזור לך להפוך את ההריון שלך לחוויה מדהימה.",
+    achievements: ["200+ נשים מרוצות", "תוכניות כושר מותאמות אישית", "תמיכה 24/7", "תוצאות מוכחות"]
+  }
+
   const testimonials = [
     {
              name: "שרה בן דוד",
       role: "הריון ראשון - 7 חודשים",
-             content: "האימונים האלה ממש שינו לי את ההריון! אני מרגישה כל כך חזקה ובריאה, ועכשיו אני ממש מוכנה ללידה. המאמנת יודעת בדיוק מה לעשות.",
+             content: "האימונים האלה ממש שינו לי את ההריון! אני מרגישה כל כך חזקה ובריאה, ועכשיו אני ממש מוכנה ללידה. מיכל יודעת בדיוק מה לעשות.",
       rating: 5
     },
     {
              name: "רומי רחימה",
       role: "הריון שני - 5 חודשים",
-      content: "בהריון הראשון לא התאמנתי בכלל, אבל הפעם זה אחרת לגמרי! אני מרגישה אנרגטית ומלאה חיים. המאמנת מקצועית ומבינה בדיוק מה אני צריכה.",
+      content: "בהריון הראשון לא התאמנתי בכלל, אבל הפעם זה אחרת לגמרי! אני מרגישה אנרגטית ומלאת חיים. מיכל הכי מקצועית שיש ומבינה בדיוק מה אני צריכה.",
       rating: 5
     },
     {
              name: "מיכל לוי",
       role: "הריון שלישי - 8 חודשים",
-      content: "גיליתי את הכוח האמיתי של הגוף שלי! האימונים עזרו לי להכין את הגוף ללידה בצורה מקצועית. אני מרגישה מוכנה כמו שלא הרגשתי אף פעם.",
+      content: "גיליתי את הכוח האמיתי של הגוף שלי! האימונים עזרו לי להכין את הגוף ללידה בצורה מקצועית. אני מרגישה מוכנה כמו שלא הרגשתי בלידות הקומות .",
       rating: 5
     }
   ]
 
      const stats = [
      { number: "200+", label: "נשים מרוצות" },
-     { number: "5+", label: "שנות ניסיון" },
+     { number: "8+", label: "שנות ניסיון" },
      { number: "100%", label: "בטיחות מובטחת" },
      { number: "24/7", label: "תמיכה זמינה" }
    ]
@@ -79,12 +88,12 @@ export default function Home() {
   const pricingPlans = [
     {
              title: "מתחילות",
-      price: "₪99",
+      price: "₪89",
       period: "חודש",
       features: [
-        "2 אימונים בשבוע",
+        " אימון אחד בשבוע",
         "הדרכה בסיסית בהריון",
-                 "מעקב התקדמות",
+
         "תמיכה באימייל"
       ]
     },
@@ -93,25 +102,24 @@ export default function Home() {
       price: "₪199",
       period: "חודש",
       features: [
-        "4 אימונים בשבוע",
-        "תוכניות כושר מותאמות אישית",
-        "תמיכת מאמנת 24/7",
-        "צילומי התקדמות",
+        "3 אימונים בשבוע",
+        "הדרכה מורחבת בהיריון",
+        "מעקב התקדמות",
         "הערכות חודשיות"
       ],
       popular: true
     },
     {
       title: "מקצועיות",
-      price: "₪299",
+      price: "₪250",
       period: "חודש",
       features: [
-        "אימונים ללא הגבלה",
-        "תוכניות כושר מותאמות",
-        "אימון אחד על אחד",
+        "4 אימונים בשבוע",
+        "תמיכת מאמנת 24/7",
+        "תוכנית כושר מותאמת אישית",
         "בדיקות שבועיות",
         "הדרכה לתזונה בהריון",
-        "תמיכה מועדפת"
+
       ]
     }
   ]
@@ -137,7 +145,7 @@ export default function Home() {
                  className="hidden md:flex gap-4"
                >
                  <a href="#home" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50">בית</a>
-                 <a href="#services" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50">שירותים</a>
+                 <a href="#services" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50">המאמנת</a>
                  <a href="#pricing" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50">מחירים</a>
                  <a href="#testimonials" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50">המלצות</a>
                  <a href="#contact" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50">צור קשר</a>
@@ -150,7 +158,7 @@ export default function Home() {
                  className="hidden md:block btn-primary px-6 py-2"
                                    onClick={() => setIsContactFormOpen(true)}
                >
-                 התחילי להתאמן
+                 תתחילי כאן
                </motion.button>
                              <MobileNav onContactClick={() => setIsContactFormOpen(true)} />
             </div>
@@ -189,7 +197,7 @@ export default function Home() {
                  className="text-lg lg:text-xl mb-8 text-gray-100 leading-relaxed max-w-3xl mx-auto"
                >
                                 הצטרפי למאות נשים שכבר גילו את הסוד - כושר מותאם במיוחד להריון בריא ומהנה. 
-                 <span className="text-sparkle-200 font-semibold"> אימון אישי עם מומחית אמיתית שיודעת בדיוק מה טוב לך.</span>
+                 <span className="text-sparkle-200 font-semibold"> אימון אישי עם {trainerInfo.name} - {trainerInfo.title} עם {trainerInfo.experience} שיודעת בדיוק מה טוב לך.</span>
               </motion.p>
             </div>
             
@@ -291,7 +299,7 @@ export default function Home() {
                        className="inline-flex items-center bg-white/20 backdrop-blur-md rounded-full px-4 py-2 mb-6"
                      >
                        <Heart className="w-4 h-4 text-sparkle-300 ml-1" />
-                       <span className="text-sm font-medium text-white">מומחית בכושר לנשים בהריון</span>
+                       <span className="text-sm font-medium text-white">מומחית בכושר לנשים בהריון - {trainerInfo.name}</span>
                      </motion.div>
                      
                      <motion.div
@@ -312,14 +320,14 @@ export default function Home() {
                                         <h3 className="text-2xl font-bold mb-4 text-white">ייעוץ כושר חינם</h3>
                                          <p className="text-gray-200 mb-6 leading-relaxed text-base">קבלי הערכת כושר מותאמת במיוחד לנשים בהריון עם תוכנית אישית מקצועית</p>
                     
-                                        <motion.button 
-                       className="bg-gradient-to-r from-sparkle-300 to-primary-300 text-white font-semibold py-4 px-10 rounded-full hover:from-sparkle-200 hover:to-primary-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                       whileHover={{ scale: 1.05 }}
-                       whileTap={{ scale: 0.95 }}
-                       onClick={() => setIsContactFormOpen(true)}
-                     >
-                       הזמן עכשיו
-                     </motion.button>
+                                                              <motion.button 
+                        className="bg-gradient-to-r from-sparkle-300 to-primary-300 text-white font-semibold py-4 px-10 rounded-full hover:from-sparkle-200 hover:to-primary-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => setIsContactFormOpen(true)}
+                      >
+                                         קבעי שיחה
+                      </motion.button>
                   </div>
                 </div>
                 
@@ -347,6 +355,10 @@ export default function Home() {
                       <Star className="w-5 h-5 text-sparkle-300 ml-2" />
                       <span>200+ נשים מרוצות</span>
                     </div>
+                    <div className="flex items-center">
+                      <Heart className="w-5 h-5 text-sparkle-300 ml-2" />
+                      <span>{trainerInfo.experience}</span>
+                    </div>
                   </div>
              </motion.div>
            </div>
@@ -362,10 +374,106 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-                                                   <h2 className="text-4xl font-bold mb-4 text-gradient">למה לבחור ב-FitMama?</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gradient">למה לבחור ב-FitMama?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              אני משלב מומחיות בכושר לנשים בהריון עם אהבה ותמיכה כדי לעזור לך להרגיש חזקה ובריאה.
+              אני משלבת מומחיות בכושר לנשים בהריון עם אהבה ותמיכה כדי לעזור לך להרגיש חזקה ובריאה.
             </p>
+          </motion.div>
+
+          {/* Trainer Profile Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-16"
+          >
+            <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-primary-200 shadow-xl">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                {/* Trainer Image */}
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="relative"
+                >
+                                     <div className="relative">
+                     <img 
+                       src="/images/WOMEN-TRAINER.png" 
+                       alt={`${trainerInfo.name} - ${trainerInfo.title}`}
+                       className="w-full h-auto rounded-2xl shadow-lg max-w-md mx-auto"
+                     />
+                     <div className="absolute inset-0 bg-gradient-to-t from-primary-500/20 to-transparent rounded-2xl"></div>
+                   </div>
+                  
+                  {/* Floating badge */}
+                  <motion.div
+                    className="absolute -top-4 -right-4 bg-gradient-to-r from-sparkle-300 to-primary-300 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
+                    animate={{ 
+                      scale: [1, 1.05, 1],
+                      rotate: [0, 2, -2, 0]
+                    }}
+                    transition={{ 
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    {trainerInfo.experience}
+                  </motion.div>
+                </motion.div>
+
+                {/* Trainer Info */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="space-y-6"
+                >
+                  <div>
+                    <h3 className="text-3xl font-bold text-gradient mb-2">{trainerInfo.name}</h3>
+                    <p className="text-xl text-primary-600 font-semibold mb-4">{trainerInfo.title}</p>
+                    <p className="text-gray-700 leading-relaxed text-lg">{trainerInfo.description}</p>
+                  </div>
+
+                  {/* Certifications */}
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3">הסמכות מקצועיות:</h4>
+                    <div className="space-y-2">
+                      {trainerInfo.certifications.map((cert, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, x: 20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                          className="flex items-center"
+                        >
+                          <CheckCircle className="w-5 h-5 text-primary-500 ml-2 flex-shrink-0" />
+                          <span className="text-gray-700">{cert}</span>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Achievements */}
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3">הישגים:</h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {trainerInfo.achievements.map((achievement, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
+                          className="bg-primary-50 rounded-lg p-3 text-center"
+                        >
+                          <span className="text-sm font-medium text-primary-700">{achievement}</span>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
           </motion.div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -399,7 +507,8 @@ export default function Home() {
           >
                          <h2 className="text-4xl font-bold mb-4 text-gradient">בחרי את התוכנית המתאימה לך</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              אפשרויות כושר גמישות המותאמות לכל שלב בהריון ולצרכים האישיים שלך.
+              אפשרויות כושר גמישות המותאמות לכל שלב בהריון ולצרכים האישיים שלך. 
+              <span className="font-semibold text-primary-600"> לכל אחת בדיוק מה שהיא צריכה.</span>
             </p>
           </motion.div>
           
@@ -453,7 +562,8 @@ export default function Home() {
            >
              <h2 className="text-4xl font-bold mb-4 text-gradient">מה הנשים שלי אומרות</h2>
              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-               סיפורים אמיתיים מנשים אמיתיות ששינו את ההריון שלהן עם כושר מותאם במיוחד.
+               סיפורים אמיתיים מנשים אמיתיות ששינו את ההריון שלהן עם כושר מותאם במיוחד. 
+               <span className="font-semibold text-primary-600">{trainerInfo.name}</span> מלווה אותן בכל שלב.
              </p>
            </motion.div>
            
@@ -517,21 +627,22 @@ export default function Home() {
           >
                          <h2 className="text-4xl font-bold mb-4 text-gradient">מוכנה להתחיל את המסע שלך?</h2>
             <p className="text-xl text-gray-600 mb-8">
-              הצטרפי למאות נשים שכבר שינו את ההריון שלהן עם כושר מותאם במיוחד.
+              הצטרפי למאות נשים שכבר שינו את ההריון שלהן עם כושר מותאם בדיוק להן. 
+              <br></br><span className="font-semibold text-primary-600"> {trainerInfo.name} - {trainerInfo.title}</span> מחכה לעבור איתך את המסע המדהים של ההיריון<br></br> בדרך הכי טובה שיש  .
             </p>
                                                                              <div className="flex flex-row gap-4 justify-center items-center">
-                <button 
-                  className="btn-primary px-8 py-3 min-w-[200px] flex items-center justify-center"
-                  onClick={() => setIsContactFormOpen(true)}
-                >
-                  <span>קבל ייעוץ כושר חינם</span>
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                </button>
+                                 <button 
+                   className="btn-primary px-8 py-3 min-w-[200px] flex items-center justify-center"
+                   onClick={() => setIsContactFormOpen(true)}
+                 >
+                   <span>תתחילי כאן</span>
+                   <ArrowLeft className="w-4 h-4 mr-2" />
+                 </button>
                 <button 
                   className="btn-outline px-8 py-3 min-w-[200px] flex items-center justify-center"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  <span>צפה בתוכניות כושר</span>
+                  <span>צפי בתוכניות כושר</span>
                 </button>
               </div>
           </motion.div>
@@ -566,7 +677,8 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4">המומחיות שלנו</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>אודות המומחיות בהריון</li>
-                <li>המאמנת שלנו</li>
+                <li className="font-medium text-primary-300">{trainerInfo.name} - {trainerInfo.title}</li>
+                <li>{trainerInfo.experience} בתחום</li>
                 <li>סיפורי הצלחה</li>
                 <li>צור קשר</li>
               </ul>
@@ -575,7 +687,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">צור קשר</h3>
                              <ul className="space-y-2 text-gray-400">
-                 <li>info@pregnancyfitness.co.il</li>
+                 <li>pregnancyfitness@gmail.com</li>
                  <li>דרך נמיר 30, תל אביב</li>
                </ul>
             </div>

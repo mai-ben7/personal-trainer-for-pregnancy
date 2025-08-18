@@ -13,7 +13,7 @@ export default function MobileNav({ onContactClick }: MobileNavProps) {
 
   const menuItems = [
     { href: '#home', label: 'בית' },
-    { href: '#services', label: 'שירותים' },
+    { href: '#services', label: 'המאמנת' },
     { href: '#pricing', label: 'מחירים' },
     { href: '#testimonials', label: 'המלצות' },
     { href: '#contact', label: 'צור קשר' },
@@ -47,15 +47,15 @@ export default function MobileNav({ onContactClick }: MobileNavProps) {
                   {item.label}
                 </a>
               ))}
-              <button 
-                className="w-full btn-primary mt-4"
-                onClick={() => {
-                  setIsOpen(false)
-                  onContactClick?.()
-                }}
-              >
-                התחילי כושר
-              </button>
+                             <button 
+                 className="w-full btn-primary mt-4"
+                 onClick={() => {
+                   setIsOpen(false)
+                   onContactClick?.()
+                 }}
+               >
+                 תתחילי כאן
+               </button>
             </div>
           </motion.div>
         )}

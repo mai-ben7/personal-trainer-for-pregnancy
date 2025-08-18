@@ -31,7 +31,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Here you would typically send the form data to your backend
-    alert('תודה! אני אצור איתך קשר בקרוב לאישור התור.')
+         alert('תודה! מיכל טננבאום תצור איתך קשר בקרוב לאישור התור.')
     setFormData({
       name: '',
       phone: '',
@@ -76,7 +76,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <div>
                 <h2 className="text-2xl font-bold text-gray-800">ייעוץ כושר חינם</h2>
-                <p className="text-gray-600 text-sm">מלאי את הפרטים ואני אצור איתך קשר</p>
+                                 <p className="text-gray-600 text-sm">מלאי את הפרטים ומיכל טננבאום תצור איתך קשר</p>
               </div>
               <button
                 onClick={onClose}
@@ -101,7 +101,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="הכניסי את שמך המלא"
+                  placeholder="הכניסי את שמך המלא למיכל"
                 />
               </div>
 
@@ -118,7 +118,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="050-123-4567"
+                  placeholder="050-123-4567 למיכל"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="your@email.com"
+                  placeholder="your@email.com למיכל"
                 />
               </div>
 
@@ -149,7 +149,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 >
-                  <option value="">בחרי שבוע הריון</option>
+                  <option value="">בחרי שבוע הריון למיכל</option>
                   <option value="1-12">שבועות 1-12 (טרימסטר ראשון)</option>
                   <option value="13-26">שבועות 13-26 (טרימסטר שני)</option>
                   <option value="27-40">שבועות 27-40 (טרימסטר שלישי)</option>
@@ -196,7 +196,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 >
-                  <option value="">בחרי שעה מועדפת</option>
+                  <option value="">בחרי שעה מועדפת למיכל</option>
                   <option value="09:00">09:00</option>
                   <option value="10:00">10:00</option>
                   <option value="11:00">11:00</option>
@@ -224,17 +224,17 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   rows={3}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="ספרי לי על עצמך ומה מעניין אותך..."
+                  placeholder="ספרי למיכל על עצמך ומה מעניין אותך..."
                 />
               </div>
 
               {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                שלח בקשה לייעוץ
-              </button>
+                             <button
+                 type="submit"
+                 className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+               >
+                 תתחילי כאן
+               </button>
             </form>
           </motion.div>
         </div>
