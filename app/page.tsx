@@ -29,22 +29,22 @@ export default function Home() {
     {
       icon: <Heart className="w-8 h-8" />,
       title: "כושר בריא בהריון",
-      description: "תוכניות אימון מותאמות במיוחד לנשים בהריון עם אהבה וטיפוח."
+      description: "תוכניות אימון מותאמות במיוחד לנשים בהריון - בטוחות, יעילות ומהנות."
     },
     {
       icon: <Baby className="w-8 h-8" />,
-      title: "מומחיות לאאימונים בהריון",
-      description: "מאמנת מוסמכת עם התמחות מיוחדת בכושר לנשים בהריו."
+      title: "מומחיות באימונים בהריון",
+      description: "מאמנת מוסמכת עם התמחות מיוחדת בכושר לנשים בהריון - יודעת בדיוק מה מתאים לך."
     },
     {
       icon: <Flower2 className="w-8 h-8" />,
       title: "פריחה וצמיחה",
-      description: "חווה אימון מלא באהבה ותמיכה מותאמת לכל שלב בהריון."
+      description: "חוויית אימון מלאה באהבה ותמיכה - מותאמת לכל שלב בהריון שלך."
     },
     {
       icon: <Star className="w-8 h-8" />,
       title: "כוחות נשיים",
-      description: "למדי להשתמש בכוחות הגוף שלך ולבנות כוח וסיבולת לקראת הלידה."
+      description: "תלמדי להשתמש בכוחות הטבעיים של הגוף שלך ולבנות כוח וסיבולת לקראת הלידה."
     }
   ]
 
@@ -52,44 +52,44 @@ export default function Home() {
     {
              name: "שרה בן דוד",
       role: "הריון ראשון - 7 חודשים",
-             content: "האימונים המקצועיים עזרו לי להרגיש חזקה ובריאה בהריון. עכשיו אני מרגישה מוכנה ללידה!",
+             content: "האימונים האלה ממש שינו לי את ההריון! אני מרגישה כל כך חזקה ובריאה, ועכשיו אני ממש מוכנה ללידה. המאמנת יודעת בדיוק מה לעשות.",
       rating: 5
     },
     {
              name: "רומי רחימה",
       role: "הריון שני - 5 חודשים",
-      content: "המסע הכושר בהריון שינה את החוויה שלי. עכשיו אני מרגישה אנרגטית ומלאה חיים!",
+      content: "בהריון הראשון לא התאמנתי בכלל, אבל הפעם זה אחרת לגמרי! אני מרגישה אנרגטית ומלאה חיים. המאמנת מקצועית ומבינה בדיוק מה אני צריכה.",
       rating: 5
     },
     {
              name: "מיכל לוי",
       role: "הריון שלישי - 8 חודשים",
-      content: "הכרתי את הכוח האמיתי של הגוף שלי. האימונים עזרו לי להכין את הגוף ללידה!",
+      content: "גיליתי את הכוח האמיתי של הגוף שלי! האימונים עזרו לי להכין את הגוף ללידה בצורה מקצועית. אני מרגישה מוכנה כמו שלא הרגשתי אף פעם.",
       rating: 5
     }
   ]
 
-  const stats = [
-    { number: "200+", label: "נשים מרוצות" },
-    { number: "50+", label: "לידות מוצלחות" },
-    { number: "99%", label: "הצלחה בהריון" },
-    { number: "24/7", label: "תמיכה זמינה" }
-  ]
+     const stats = [
+     { number: "200+", label: "נשים מרוצות" },
+     { number: "5+", label: "שנות ניסיון" },
+     { number: "100%", label: "בטיחות מובטחת" },
+     { number: "24/7", label: "תמיכה זמינה" }
+   ]
 
   const pricingPlans = [
     {
-             title: "מתחילות מקצועיות",
+             title: "מתחילות",
       price: "₪99",
       period: "חודש",
       features: [
         "2 אימונים בשבוע",
         "הדרכה בסיסית בהריון",
-                 "מעקב התקדמות מקצועי",
+                 "מעקב התקדמות",
         "תמיכה באימייל"
       ]
     },
     {
-      title: "כושר מתקדם",
+      title: "מתקדמות",
       price: "₪199",
       period: "חודש",
       features: [
@@ -102,7 +102,7 @@ export default function Home() {
       popular: true
     },
     {
-      title: "כושר אליטיסטי",
+      title: "מקצועיות",
       price: "₪299",
       period: "חודש",
       features: [
@@ -128,7 +128,7 @@ export default function Home() {
               className="flex items-center"
             >
               <Heart className="w-8 h-8 text-primary-500 mr-2 sparkle-effect" />
-                             <span className="text-2xl font-bold text-gradient">כושר מקצועי בהריון</span>
+                                                           <span className="text-2xl font-bold text-gradient font-display tracking-wide drop-shadow-lg">FitMama</span>
             </motion.div>
             
                                                                                <motion.div
@@ -158,43 +158,43 @@ export default function Home() {
         </div>
       </nav>
 
-             {/* Hero Section */}
-       <section id="home" className="pt-16 pb-8 relative overflow-hidden min-h-screen flex items-center">
-        {/* Background with gradient and floating elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-secondary-400 to-sparkle-400"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-        
-        {/* Floating decorative elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-white/10 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-white/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-        
-                                                                       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center mb-8">
-              <motion.h1 
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white"
-              >
-                                גלה כושר{' '}
-                 <span className="text-sparkle-300">מקצועי</span>
-                 {' '}בהריון
-              </motion.h1>
-             
-                           <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl lg:text-2xl mb-6 text-gray-100 leading-relaxed max-w-4xl mx-auto"
-              >
-                               הצטרף למאות נשים שהגשימו את החלומות שלהם עם כושר מותאם לנשים בהריון. 
-                <span className="text-sparkle-200 font-semibold"> אימון אישי עם מומחיות של בריאות ובטיחות.</span>
-             </motion.p>
-           </div>
-           
-                       {/* Main content area with image and CTA */}
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
+                           {/* Hero Section */}
+        <section id="home" className="pt-20 pb-16 relative overflow-hidden min-h-screen flex items-center">
+         {/* Background with gradient and floating elements */}
+         <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-secondary-400 to-sparkle-400"></div>
+         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+         
+         {/* Floating decorative elements */}
+         <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"></div>
+         <div className="absolute top-40 right-20 w-16 h-16 bg-white/10 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+         <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-white/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+         
+                                                                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+             <div className="text-center mb-12">
+               <motion.h1 
+                 initial={{ opacity: 0, y: 30 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8 }}
+                 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight text-white"
+               >
+                                 כושר{' '}
+                  <span className="text-sparkle-300">בריא</span>
+                  {' '}בהריון
+               </motion.h1>
+              
+                            <motion.p 
+                 initial={{ opacity: 0, y: 20 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8, delay: 0.2 }}
+                 className="text-lg lg:text-xl mb-8 text-gray-100 leading-relaxed max-w-3xl mx-auto"
+               >
+                                הצטרפי למאות נשים שכבר גילו את הסוד - כושר מותאם במיוחד להריון בריא ומהנה. 
+                 <span className="text-sparkle-200 font-semibold"> אימון אישי עם מומחית אמיתית שיודעת בדיוק מה טוב לך.</span>
+              </motion.p>
+            </div>
+            
+                        {/* Main content area with image and CTA */}
+             <div className="grid lg:grid-cols-2 gap-12 items-center">
              {/* Left side - Pregnancy workout image */}
              <motion.div
                initial={{ opacity: 0, x: -30 }}
@@ -280,78 +280,74 @@ export default function Home() {
                transition={{ duration: 0.8, delay: 0.6 }}
                className="text-white order-1 lg:order-2"
              >
-                                                               {/* Consultation card */}
-                 <div className="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-white/20 shadow-2xl mb-6">
-                  <div className="text-center">
-                    {/* Badge moved here */}
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
-                      className="inline-flex items-center bg-white/20 backdrop-blur-md rounded-full px-3 py-1 mb-4"
-                    >
-                      <Heart className="w-3 h-3 text-sparkle-300 ml-1" />
-                      <span className="text-xs font-medium text-white">מומחיות בכושר לנשים בהריון</span>
-                    </motion.div>
+                                                                                                                               {/* Consultation card */}
+                  <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl mb-8">
+                   <div className="text-center">
+                     {/* Badge moved here */}
+                     <motion.div
+                       initial={{ opacity: 0, scale: 0.8 }}
+                       animate={{ opacity: 1, scale: 1 }}
+                       transition={{ duration: 0.6, delay: 0.2 }}
+                       className="inline-flex items-center bg-white/20 backdrop-blur-md rounded-full px-4 py-2 mb-6"
+                     >
+                       <Heart className="w-4 h-4 text-sparkle-300 ml-1" />
+                       <span className="text-sm font-medium text-white">מומחית בכושר לנשים בהריון</span>
+                     </motion.div>
+                     
+                     <motion.div
+                       className="w-20 h-20 bg-gradient-to-br from-sparkle-300 to-primary-300 rounded-full flex items-center justify-center mx-auto mb-6"
+                       animate={{ 
+                         scale: [1, 1.1, 1],
+                         rotate: [0, 5, -5, 0]
+                       }}
+                       transition={{ 
+                         duration: 4,
+                         repeat: Infinity,
+                         ease: "easeInOut"
+                       }}
+                     >
+                       <Baby className="w-10 h-10 text-white" />
+                     </motion.div>
                     
-                    <motion.div
-                      className="w-16 h-16 bg-gradient-to-br from-sparkle-300 to-primary-300 rounded-full flex items-center justify-center mx-auto mb-4"
-                      animate={{ 
-                        scale: [1, 1.1, 1],
-                        rotate: [0, 5, -5, 0]
-                      }}
-                      transition={{ 
-                        duration: 4,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                    >
-                      <Baby className="w-8 h-8 text-white" />
-                    </motion.div>
-                   
-                                       <h3 className="text-xl font-bold mb-2 text-white">ייעוץ כושר חינם</h3>
-                                        <p className="text-gray-200 mb-4 leading-relaxed text-sm">קבל הערכת כושר מותאמת במיוחד לנשים בהריון עם תוכנית אישית מקצועית</p>
-                   
-                                       <motion.button 
-                      className="bg-gradient-to-r from-sparkle-300 to-primary-300 text-white font-semibold py-3 px-8 rounded-full hover:from-sparkle-200 hover:to-primary-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => setIsContactFormOpen(true)}
-                    >
-                      הזמן עכשיו
-                    </motion.button>
-                 </div>
-               </div>
-               
-                                                                                               {/* Action button */}
-                  <div className="mb-6 flex justify-center">
-                   <motion.button 
-                     className="btn-secondary text-lg px-8 py-4 relative overflow-hidden group shadow-lg hover:shadow-2xl custom-golden-glow w-full sm:w-auto"
-                     whileHover={{ scale: 1.05 }}
-                     whileTap={{ scale: 0.95 }}
-                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                   >
-                     <span className="relative z-10 flex items-center justify-center">
-                       התחל את המסע המקצועי שלך
-                       <ArrowLeft className="w-5 h-5 mr-2 transition-transform group-hover:-translate-x-1" />
-                     </span>
-                     <div className="absolute inset-0 bg-gradient-to-r from-secondary-600 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                   </motion.button>
-                 </div>
-               
-                                                               
-                
-                {/* Trust indicators */}
-                 <div className="flex items-center justify-center gap-4 text-xs text-gray-200">
-                  <div className="flex items-center">
-                    <Star className="w-4 h-4 text-sparkle-300 ml-1" />
-                    <span>200+ נשים מרוצות</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Baby className="w-4 h-4 text-sparkle-300 ml-1" />
-                    <span>50+ לידות מוצלחות</span>
+                                        <h3 className="text-2xl font-bold mb-4 text-white">ייעוץ כושר חינם</h3>
+                                         <p className="text-gray-200 mb-6 leading-relaxed text-base">קבלי הערכת כושר מותאמת במיוחד לנשים בהריון עם תוכנית אישית מקצועית</p>
+                    
+                                        <motion.button 
+                       className="bg-gradient-to-r from-sparkle-300 to-primary-300 text-white font-semibold py-4 px-10 rounded-full hover:from-sparkle-200 hover:to-primary-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                       whileHover={{ scale: 1.05 }}
+                       whileTap={{ scale: 0.95 }}
+                       onClick={() => setIsContactFormOpen(true)}
+                     >
+                       הזמן עכשיו
+                     </motion.button>
                   </div>
                 </div>
+                
+                                                                                                {/* Action button */}
+                   <div className="mb-8 flex justify-center">
+                    <motion.button 
+                      className="btn-secondary text-xl px-10 py-5 relative overflow-hidden group shadow-lg hover:shadow-2xl custom-golden-glow w-full sm:w-auto"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        התחילי את המסע שלך
+                        <ArrowLeft className="w-6 h-6 mr-3 transition-transform group-hover:-translate-x-1" />
+                      </span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-secondary-600 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </motion.button>
+                  </div>
+                
+                                                                
+                 
+                                   {/* Trust indicators */}
+                   <div className="flex items-center justify-center gap-6 text-sm text-gray-200">
+                    <div className="flex items-center">
+                      <Star className="w-5 h-5 text-sparkle-300 ml-2" />
+                      <span>200+ נשים מרוצות</span>
+                    </div>
+                  </div>
              </motion.div>
            </div>
          </div>
@@ -366,9 +362,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-                         <h2 className="text-4xl font-bold mb-4 text-gradient">למה לבחור בכושר מקצועי בהריון?</h2>
+                                                   <h2 className="text-4xl font-bold mb-4 text-gradient">למה לבחור ב-FitMama?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              אנו משלבים מומחיות בכושר לנשים בהריון עם אהבה ותמיכה כדי לעזור לך להרגיש חזקה ובריאה.
+              אני משלב מומחיות בכושר לנשים בהריון עם אהבה ותמיכה כדי לעזור לך להרגיש חזקה ובריאה.
             </p>
           </motion.div>
           
@@ -401,7 +397,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-                         <h2 className="text-4xl font-bold mb-4 text-gradient">בחר את התוכנית המתאימה שלך</h2>
+                         <h2 className="text-4xl font-bold mb-4 text-gradient">בחרי את התוכנית המתאימה לך</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               אפשרויות כושר גמישות המותאמות לכל שלב בהריון ולצרכים האישיים שלך.
             </p>
@@ -455,9 +451,9 @@ export default function Home() {
              transition={{ duration: 0.6 }}
              className="text-center mb-16"
            >
-             <h2 className="text-4xl font-bold mb-4 text-gradient">מה הנשים שלנו אומרות</h2>
+             <h2 className="text-4xl font-bold mb-4 text-gradient">מה הנשים שלי אומרות</h2>
              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-               סיפורים אמיתיים מנשים אמיתיות ששינו את חייהן עם כושר מותאם לנשים בהריון.
+               סיפורים אמיתיים מנשים אמיתיות ששינו את ההריון שלהן עם כושר מותאם במיוחד.
              </p>
            </motion.div>
            
@@ -480,7 +476,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-500/5 to-transparent rounded-2xl"></div>
                   </div>
                   <p className="text-base text-gray-700 mt-4 font-medium">
-                    התוצאות מדברות בעד עצמן - כושר מותאם לנשים בהריון מביא לתוצאות מדהימות
+                    התוצאות מדברות בעד עצמן - כושר מותאם לנשים בהריון מביא לתוצאות מדהימות!
                   </p>
                 </div>
               </div>
@@ -519,9 +515,9 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-                         <h2 className="text-4xl font-bold mb-4 text-gradient">מוכנה להתחיל את המסע המקצועי שלך?</h2>
+                         <h2 className="text-4xl font-bold mb-4 text-gradient">מוכנה להתחיל את המסע שלך?</h2>
             <p className="text-xl text-gray-600 mb-8">
-              הצטרף למאות נשים שכבר שינו את חייהן עם כושר מותאם לנשים בהריון.
+              הצטרפי למאות נשים שכבר שינו את ההריון שלהן עם כושר מותאם במיוחד.
             </p>
                                                                              <div className="flex flex-row gap-4 justify-center items-center">
                 <button 
@@ -549,10 +545,10 @@ export default function Home() {
             <div>
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-primary-400 ml-2 sparkle-effect" />
-                                 <span className="text-2xl font-bold">כושר מקצועי בהריון</span>
+                                 <span className="text-2xl font-bold font-display tracking-wide drop-shadow-lg">FitMama</span>
               </div>
               <p className="text-gray-400">
-                שינוי חיים באמצעות כושר מותאם לנשים בהריון עם אהבה ותמיכה.
+                שינוי ההריון באמצעות כושר מותאם במיוחד עם אהבה ותמיכה.
               </p>
             </div>
             
@@ -578,11 +574,10 @@ export default function Home() {
             
             <div>
               <h3 className="text-lg font-semibold mb-4">צור קשר</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>info@pregnancyfitness.co.il</li>
-                <li>+972-50-123-4567</li>
-                <li>רחוב הכושר 123, תל אביב</li>
-              </ul>
+                             <ul className="space-y-2 text-gray-400">
+                 <li>info@pregnancyfitness.co.il</li>
+                 <li>דרך נמיר 30, תל אביב</li>
+               </ul>
             </div>
           </div>
           

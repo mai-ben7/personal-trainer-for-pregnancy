@@ -31,7 +31,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Here you would typically send the form data to your backend
-    alert('תודה! נציג יצור איתך קשר בקרוב לאישור התור.')
+    alert('תודה! אני אצור איתך קשר בקרוב לאישור התור.')
     setFormData({
       name: '',
       phone: '',
@@ -76,7 +76,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <div>
                 <h2 className="text-2xl font-bold text-gray-800">ייעוץ כושר חינם</h2>
-                <p className="text-gray-600 text-sm">מלא את הפרטים וניצור איתך קשר</p>
+                <p className="text-gray-600 text-sm">מלאי את הפרטים ואני אצור איתך קשר</p>
               </div>
               <button
                 onClick={onClose}
@@ -101,7 +101,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="הכנס את שמך המלא"
+                  placeholder="הכניסי את שמך המלא"
                 />
               </div>
 
@@ -224,7 +224,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   rows={3}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="ספרי לנו על עצמך ומה מעניין אותך..."
+                  placeholder="ספרי לי על עצמך ומה מעניין אותך..."
                 />
               </div>
 

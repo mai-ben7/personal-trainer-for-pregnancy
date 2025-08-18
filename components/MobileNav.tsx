@@ -54,7 +54,7 @@ export default function MobileNav({ onContactClick }: MobileNavProps) {
                   onContactClick?.()
                 }}
               >
-                התחל כושר
+                התחילי כושר
               </button>
             </div>
           </motion.div>

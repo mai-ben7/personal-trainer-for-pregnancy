@@ -24,7 +24,7 @@ export default function PricingCard({ title, price, period, features, popular = 
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
           <div className="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center">
             <Star className="w-4 h-4 ml-1 sparkle-effect" />
-            הכי פופולרי
+            הכי פופולרית
           </div>
         </div>
       )}
@@ -47,14 +47,14 @@ export default function PricingCard({ title, price, period, features, popular = 
       </ul>
       
       <button
-        onClick={onClick || (() => alert(`תוכנית ${title} נבחרה! נציג יצור איתך קשר בקרוב.`))}
+        onClick={onClick || (() => alert(`תוכנית ${title} נבחרה! אני אצור איתך קשר בקרוב.`))}
         className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 mt-auto ${
           popular
             ? 'bg-primary-500 hover:bg-primary-600 text-white shadow-lg hover:shadow-xl'
             : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
         }`}
       >
-        בחר תוכנית
+        בחרי תוכנית
       </button>
     </motion.div>
   )

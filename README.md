@@ -1,6 +1,6 @@
-# FitLife Pro - Personal Trainer Website
+# FitMama - אתר מאמנת אישית
 
-A modern, animated personal trainer website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+אתר מאמנת אישית מודרני ואנימטיבי לנשים בהריון עם Next.js, TypeScript, Tailwind CSS, ו-Framer Motion.
 
 ## 🎯 Features
 
