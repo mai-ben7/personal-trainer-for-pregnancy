@@ -127,25 +127,36 @@ export default function Home() {
   ]
 
   // Motion variants based on reduced motion preference
-  const fadeInUp = reduceMotion ? {} : {
+  const fadeInUp = reduceMotion ? {
+    initial: { opacity: 1, y: 0 },
+    animate: { opacity: 1, y: 0 }
+  } : {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.6 }
   }
 
-  const fadeInLeft = reduceMotion ? {} : {
+  const fadeInLeft = reduceMotion ? {
+    initial: { opacity: 1, x: 0 },
+    animate: { opacity: 1, x: 0 }
+  } : {
     initial: { opacity: 0, x: -30 },
     animate: { opacity: 1, x: 0 },
     transition: { duration: 0.8 }
   }
 
-  const fadeInRight = reduceMotion ? {} : {
+  const fadeInRight = reduceMotion ? {
+    initial: { opacity: 1, x: 0 },
+    animate: { opacity: 1, x: 0 }
+  } : {
     initial: { opacity: 0, x: 30 },
     animate: { opacity: 1, x: 0 },
     transition: { duration: 0.8 }
   }
 
-  const floatAnimation = reduceMotion ? {} : {
+  const floatAnimation = reduceMotion ? {
+    animate: { y: 0, scale: 1 }
+  } : {
     animate: { 
       y: [0, -10, 0],
       scale: [1, 1.02, 1]
@@ -339,9 +350,7 @@ export default function Home() {
                   <p className="text-sm sm:text-base text-gray-200 mb-4 sm:mb-6 leading-relaxed">קבלי הערכת כושר מותאמת במיוחד לנשים בהריון עם תוכנית אישית מקצועית</p>
                   
                   <motion.button 
-                    className="bg-gradient-to-r from-sparkle-300 to-primary-300 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-full hover:from-sparkle-200 hover:to-primary-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-h-[44px] w-full sm:w-auto"
-                    whileHover={reduceMotion ? {} : { scale: 1.05 }}
-                    whileTap={reduceMotion ? {} : { scale: 0.95 }}
+                    className="bg-gradient-to-r from-sparkle-300 to-primary-300 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-full hover:from-sparkle-200 hover:to-primary-200 transition-all duration-300 shadow-lg hover:shadow-xl min-h-[44px] w-full sm:w-auto"
                     onClick={() => setIsContactFormOpen(true)}
                   >
                     תתחילי כאן
@@ -353,13 +362,11 @@ export default function Home() {
               <div className="mb-6 sm:mb-8 flex justify-center">
                 <motion.button 
                   className="btn-secondary text-lg sm:text-xl px-6 sm:px-10 py-4 sm:py-5 relative overflow-hidden group shadow-lg hover:shadow-2xl custom-golden-glow w-full sm:w-auto"
-                  whileHover={reduceMotion ? {} : { scale: 1.05 }}
-                  whileTap={reduceMotion ? {} : { scale: 0.95 }}
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   <span className="relative z-10 flex items-center justify-center">
                     התחילי את המסע שלך
-                    <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 transition-transform group-hover:-translate-x-1" />
+                    <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" />
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-secondary-600 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </motion.button>

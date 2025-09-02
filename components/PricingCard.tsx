@@ -1,8 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { Check, Star } from 'lucide-react'
-import { useReduceMotionOrSmall } from '@/lib/useReducedMotionOrSmall'
 
 interface PricingCardProps {
   title: string
@@ -14,25 +12,9 @@ interface PricingCardProps {
 }
 
 export default function PricingCard({ title, price, period, features, popular = false, onClick }: PricingCardProps) {
-  const reduceMotion = useReduceMotionOrSmall()
-
-  // Motion variants based on reduced motion preference
-  const cardAnimation = reduceMotion ? {} : {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
-  }
-
-  const hoverAnimation = reduceMotion ? {} : {
-    whileHover: { scale: 1.02 },
-    whileTap: { scale: 0.98 }
-  }
-
   return (
-    <motion.div
-      {...cardAnimation}
-      {...hoverAnimation}
-      className={`relative magical-card p-4 sm:p-6 lg:p-8 flex flex-col h-full min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] ${popular ? 'ring-2 ring-primary-500 scale-105' : ''}`}
+    <div
+      className={`relative magical-card p-4 sm:p-6 lg:p-8 flex flex-col h-full min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] border-2 border-red-500 ${popular ? 'ring-2 ring-primary-500' : ''}`}
     >
       {popular && (
         <div className="absolute -top-2 sm:-top-3 lg:-top-4 left-1/2 transform -translate-x-1/2">
@@ -62,7 +44,7 @@ export default function PricingCard({ title, price, period, features, popular = 
       
       <button
         onClick={onClick || (() => alert(`תוכנית ${title} נבחרה! אני אצור איתך קשר בקרוב.`))}
-        className={`w-full py-2 sm:py-3 px-3 sm:px-4 lg:px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 mt-auto min-h-[44px] touch-target ${
+        className={`w-full py-2 sm:py-3 px-3 sm:px-4 lg:px-6 rounded-lg font-semibold transition-all duration-300 mt-auto min-h-[44px] touch-target ${
           popular
             ? 'bg-primary-500 hover:bg-primary-600 text-white shadow-lg hover:shadow-xl'
             : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
@@ -70,6 +52,6 @@ export default function PricingCard({ title, price, period, features, popular = 
       >
         בחרי תוכנית
       </button>
-    </motion.div>
+    </div>
   )
 } 
