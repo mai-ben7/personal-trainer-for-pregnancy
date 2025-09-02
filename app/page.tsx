@@ -29,22 +29,22 @@ export default function Home() {
 
   const features = [
     {
-      icon: <Heart className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10" />,
+      icon: <Heart className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9" />,
       title: "כושר בריא בהריון",
       description: "תוכניות אימון מותאמות במיוחד לנשים בהריון - בטוחות, יעילות ומהנות."
     },
     {
-      icon: <Baby className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10" />,
+      icon: <Baby className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9" />,
       title: "מומחיות באימונים בהריון",
       description: "מאמנת מוסמכת עם התמחות מיוחדת בכושר לנשים בהריון - יודעת בדיוק מה מתאים לך."
     },
     {
-      icon: <Flower2 className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10" />,
+      icon: <Flower2 className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9" />,
       title: "פריחה וצמיחה",
       description: "חוויית אימון מלאה באהבה ותמיכה - מותאמת לכל שלב בהריון שלך."
     },
     {
-      icon: <Star className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10" />,
+      icon: <Star className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9" />,
       title: "כוחות נשיים",
       description: "תלמדי להשתמש בכוחות הטבעיים של הגוף שלך ולבנות כוח וסיבולת לקראת הלידה."
     }
@@ -382,11 +382,11 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="services" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <section id="services" className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gradient-to-br from-primary-50 to-secondary-50">
         <div className="container-responsive">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-12 sm:mb-16 lg:mb-20"
+            className="text-center mb-8 sm:mb-12 lg:mb-16 xl:mb-20"
           >
             <h2 className="text-responsive-h2 mb-4 text-gradient">למה לבחור ב-FitMama?</h2>
             <p className="text-responsive-subtitle text-gray-600 max-w-4xl mx-auto">
@@ -487,19 +487,19 @@ export default function Home() {
             </div>
           </motion.div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-7 lg:gap-8 xl:gap-10 2xl:gap-12 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 w-full">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
                 {...fadeInUp}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="feature-card p-6 sm:p-7 lg:p-8 xl:p-10 text-center min-h-[160px] sm:min-h-[180px] lg:min-h-[200px] flex flex-col justify-center"
+                className="feature-card p-4 sm:p-6 lg:p-8 xl:p-10 text-center min-h-[140px] sm:min-h-[160px] lg:min-h-[180px] xl:min-h-[200px] flex flex-col justify-center"
               >
-                <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-5 sm:mb-6 lg:mb-8 text-primary-500 sparkle-effect">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18 xl:w-20 xl:h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 lg:mb-6 xl:mb-8 text-primary-500 sparkle-effect">
                   {feature.icon}
                 </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4 sm:mb-5 text-gray-800">{feature.title}</h3>
-                <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed flex-1 px-3">{feature.description}</p>
+                <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold mb-2 sm:mb-3 lg:mb-4 xl:mb-5 text-gray-800">{feature.title}</h3>
+                <p className="text-sm sm:text-base lg:text-lg xl:text-lg text-gray-600 leading-relaxed flex-1 px-2 sm:px-3">{feature.description}</p>
               </motion.div>
             ))}
           </div>
