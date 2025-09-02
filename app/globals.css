@@ -46,7 +46,7 @@
   }
   
   .magical-card {
-    @apply bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-primary-200 animate-float;
+    @apply bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-primary-200;
   }
 
   /* Enhanced feature cards */

@@ -507,11 +507,11 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 sm:py-20 bg-white">
+      <section id="pricing" className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container-responsive">
           <motion.div
             {...fadeInUp}
-            className="text-center mb-12 sm:mb-16"
+            className="text-center mb-8 sm:mb-12 lg:mb-16"
           >
             <h2 className="text-responsive-h2 mb-4 text-gradient">בחרי את התוכנית המתאימה לך</h2>
             <p className="text-responsive-subtitle text-gray-600 max-w-3xl mx-auto">
@@ -520,7 +520,7 @@ export default function Home() {
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {pricingPlans.map((plan, index) => (
               <PricingCard
                 key={index}
@@ -596,7 +596,7 @@ export default function Home() {
             </div>
           </motion.div>
           
-          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
