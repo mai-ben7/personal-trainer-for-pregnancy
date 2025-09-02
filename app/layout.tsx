@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     shortcut: '/images/pregnant.png',
     apple: '/images/pregnant.png',
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    viewportFit: 'cover',
+  },
 }
 
 export default function RootLayout({
@@ -31,6 +36,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="he" dir="rtl" className={`${heebo.variable} ${rubik.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </head>
       <body className="font-sans antialiased">
         {children}
       </body>

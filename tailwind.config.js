@@ -7,6 +7,29 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '380px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '1.5rem',
+          lg: '2.5rem',
+        },
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1440px',
+        },
+      },
       colors: {
         primary: {
           50: '#fdf2f8',
