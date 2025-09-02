@@ -14,7 +14,7 @@ interface PricingCardProps {
 export default function PricingCard({ title, price, period, features, popular = false, onClick }: PricingCardProps) {
   return (
     <div
-      className={`relative magical-card p-4 sm:p-6 lg:p-8 flex flex-col h-full min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] border-2 border-red-500 ${popular ? 'ring-2 ring-primary-500' : ''}`}
+      className={`relative magical-card p-4 sm:p-6 lg:p-8 flex flex-col h-full min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] ${popular ? 'ring-2 ring-primary-500' : ''}`}
     >
       {popular && (
         <div className="absolute -top-2 sm:-top-3 lg:-top-4 left-1/2 transform -translate-x-1/2">
