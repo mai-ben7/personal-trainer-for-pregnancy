@@ -115,7 +115,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   required
                   className="w-full px-3 sm:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base"
-                  placeholder="הכניסי את שמך המלא למיכל"
+                  placeholder="הכניסי את שמך המלא"
                 />
               </div>
 
@@ -132,7 +132,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   required
                   className="w-full px-3 sm:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base"
-                  placeholder="050-123-4567 למיכל"
+                  placeholder="050-000-0000"
                 />
               </div>
 
@@ -148,7 +148,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base"
-                  placeholder="your@email.com למיכל"
+                  placeholder="your@email.com"
                 />
               </div>
 
@@ -163,7 +163,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base"
                 >
-                  <option value="">בחרי שבוע הריון למיכל</option>
+                  <option value="">בחרי שבוע הריון </option>
                   <option value="1-12">שבועות 1-12 (טרימסטר ראשון)</option>
                   <option value="13-26">שבועות 13-26 (טרימסטר שני)</option>
                   <option value="27-40">שבועות 27-40 (טרימסטר שלישי)</option>
@@ -210,7 +210,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base"
                 >
-                  <option value="">בחרי שעה מועדפת למיכל</option>
+                  <option value="">בחרי שעה מועדפת</option>
                   <option value="09:00">09:00</option>
                   <option value="10:00">10:00</option>
                   <option value="11:00">11:00</option>
@@ -238,7 +238,7 @@ export default function ContactFormModal({ isOpen, onClose, selectedPlan }: Cont
                   onChange={handleChange}
                   rows={3}
                   className="w-full px-3 sm:px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base"
-                  placeholder="ספרי למיכל על עצמך ומה מעניין אותך..."
+                  placeholder="ספרי לי על עצמך ומה מעניין אותך..."
                 />
               </div>
 

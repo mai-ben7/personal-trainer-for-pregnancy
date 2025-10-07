@@ -182,16 +182,61 @@ export default function Home() {
               <span className="text-xl sm:text-2xl font-bold text-gradient font-display tracking-wide drop-shadow-lg">FitMama</span>
             </motion.div>
             
-            <motion.div
-              {...fadeInRight}
-              className="hidden md:flex gap-4"
-            >
-              <a href="#home" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target">בית</a>
-              <a href="#services" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target">המאמנת</a>
-              <a href="#pricing" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target">מחירים</a>
-              <a href="#testimonials" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target">המלצות</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target">צור קשר</a>
-            </motion.div>
+             <motion.div
+               {...fadeInRight}
+               className="hidden md:flex gap-4"
+             >
+               <a 
+                 href="#home" 
+                 onClick={(e) => {
+                   e.preventDefault()
+                   document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })
+                 }}
+                 className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target"
+               >
+                 בית
+               </a>
+               <a 
+                 href="#services" 
+                 onClick={(e) => {
+                   e.preventDefault()
+                   document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
+                 }}
+                 className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target"
+               >
+                 המאמנת
+               </a>
+               <a 
+                 href="#pricing" 
+                 onClick={(e) => {
+                   e.preventDefault()
+                   document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
+                 }}
+                 className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target"
+               >
+                 מחירים
+               </a>
+               <a 
+                 href="#testimonials" 
+                 onClick={(e) => {
+                   e.preventDefault()
+                   document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })
+                 }}
+                 className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target"
+               >
+                 המלצות
+               </a>
+               <a 
+                 href="#contact" 
+                 onClick={(e) => {
+                   e.preventDefault()
+                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                 }}
+                 className="text-gray-700 hover:text-primary-500 transition-colors px-2 py-2 rounded-lg hover:bg-primary-50 touch-target"
+               >
+                 צור קשר
+               </a>
+             </motion.div>
             
             <div className="flex items-center space-x-3">
               <motion.button
@@ -575,7 +620,7 @@ export default function Home() {
             <h2 className="text-responsive-h2 mb-4 text-gradient">מה הנשים שלי אומרות</h2>
             <p className="text-responsive-subtitle text-gray-600 max-w-3xl mx-auto">
               סיפורים אמיתיים מנשים אמיתיות ששינו את ההריון שלהן עם כושר מותאם במיוחד. 
-              <span className="font-semibold text-primary-600">{trainerInfo.name}</span> מלווה אותן בכל שלב.
+              אני מלווה אתכן בכל שלב.
             </p>
           </motion.div>
           
@@ -585,23 +630,57 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center mb-12 sm:mb-16"
           >
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gradient">תוצאות אמיתיות - לפני ואחרי</h3>
-              <div className="bg-white/80 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-primary-200 shadow-lg">
-                <div className="relative">
-                  <img 
-                    src="/images/before-after.png" 
-                    alt="תוצאות לפני ואחרי אימון בהריון" 
-                    className="w-full h-auto rounded-xl sm:rounded-2xl max-h-60 sm:max-h-80 object-contain"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-500/5 to-transparent rounded-xl sm:rounded-2xl"></div>
+              <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+                {/* Before & After Image */}
+                <div className="bg-white/80 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-primary-200 shadow-lg">
+                  <div className="relative">
+                    <img 
+                      src="/images/before-after.png" 
+                      alt="תוצאות לפני ואחרי אימון בהריון" 
+                      className="w-full h-auto rounded-xl sm:rounded-2xl max-h-[400px] sm:max-h-[500px] lg:max-h-[600px] object-contain"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary-500/5 to-transparent rounded-xl sm:rounded-2xl"></div>
+                  </div>
                 </div>
-                <p className="text-sm sm:text-base text-gray-700 mt-3 sm:mt-4 font-medium">
-                  התוצאות מדברות בעד עצמן - כושר מותאם לנשים בהריון מביא לתוצאות מדהימות!
-                </p>
+                
+                {/* Text Bubble */}
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-primary-200 shadow-lg relative">
+                    {/* Speech bubble arrow */}
+                    <div className="absolute -right-4 top-8 w-0 h-0 border-l-[20px] border-l-primary-100 border-t-[15px] border-t-transparent border-b-[15px] border-b-transparent hidden lg:block"></div>
+                    
+                    <div className="text-center">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                        <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                      </div>
+                      
+                      <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">
+                        החזרתי את הגוף שלי במהירות! 💪
+                      </h4>
+                      
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+                        "התחלתי להתאמן עם מיכל כבר בשבוע ה-4 להריון. 
+                       <br></br> <span className="font-semibold text-primary-600">תוך 3 חודשים אחרי הלידה </span> 
+                        חזרתי לגוף שלי ואפילו יותר חזקה!" 
+                      </p>
+                      
+                      <div className="bg-white/60 rounded-lg p-3 sm:p-4">
+                        <p className="text-xs sm:text-sm text-gray-600 font-medium">
+                          ✨ <span className="font-semibold">הסוד:</span> כושר מותאם בהריון + תזונה נכונה = החזרה מהירה לגוף!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              
             </div>
           </motion.div>
+          
+          {/* Spacing between before/after and testimonials */}
+          <div className="mb-16 sm:mb-20 lg:mb-24"></div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {testimonials.map((testimonial, index) => (
@@ -724,4 +803,4 @@ export default function Home() {
       />
     </div>
   )
-} 
+}

@@ -14,11 +14,11 @@ export default function MobileNav({ onContactClick }: MobileNavProps) {
   const reduceMotion = useReduceMotionOrSmall()
 
   const menuItems = [
-    { href: '#home', label: 'בית' },
-    { href: '#services', label: 'המאמנת' },
-    { href: '#pricing', label: 'מחירים' },
-    { href: '#testimonials', label: 'המלצות' },
-    { href: '#contact', label: 'צור קשר' },
+    { href: '#home', label: 'בית', id: 'home' },
+    { href: '#services', label: 'המאמנת', id: 'services' },
+    { href: '#pricing', label: 'מחירים', id: 'pricing' },
+    { href: '#testimonials', label: 'המלצות', id: 'testimonials' },
+    { href: '#contact', label: 'צור קשר', id: 'contact' },
   ]
 
   // Motion variants based on reduced motion preference
@@ -50,7 +50,11 @@ export default function MobileNav({ onContactClick }: MobileNavProps) {
                 <a
                   key={item.href}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsOpen(false)
+                    document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' })
+                  }}
                   className="block text-gray-700 hover:text-primary-500 font-medium transition-colors py-3 px-2 rounded-lg hover:bg-primary-50 touch-target"
                 >
                   {item.label}
